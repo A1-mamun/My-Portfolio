@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import image from "../../assets/banner_img.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +25,13 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="fixed w-full">
-      <div className="navbar container mx-auto pt-5  ">
+    <div className="fixed w-full top-0 bg-black z-10">
+      <div className="navbar container mx-auto pt-5">
         <div className="navbar-start">
           <div className="flex items-center gap-5">
             <div className="avatar">
               <div className="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2">
-                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={image} />
               </div>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
