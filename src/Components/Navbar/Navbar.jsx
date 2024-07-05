@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import image from "../../assets/banner_img.jpg";
+import image from "../../assets/image/banner_img.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

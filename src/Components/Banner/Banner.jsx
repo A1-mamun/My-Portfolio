@@ -1,5 +1,5 @@
 import { FaFileDownload } from "react-icons/fa";
-import image from "../../assets/banner_img.jpg";
+import image from "../../assets/image/banner_img.jpg";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Banner = () => {

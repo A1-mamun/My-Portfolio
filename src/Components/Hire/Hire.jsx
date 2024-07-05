@@ -61,28 +61,3 @@ const Hire = () => {
 };
 
 export default Hire;
-
-{
-  /* <div className="space-y-5 flex-1">
-  <h2 className="w-full text-center text-3xl font-bold">Let&apos;s Connect!</h2>
-  <div className="flex items-center gap-3">
-    <MdEmail size={30} />
-    <h3 className="text-xl">1154almamun@gmail.com</h3>
-  </div>
-  <div className="flex items-center gap-3">
-    <FaPhoneVolume size={30} />
-    <h3 className="text-xl">+880 1745093497</h3>
-  </div>
-  <div className="flex items-center gap-4">
-    <a href="https://www.linkedin.com/in/a1-mamun" target="_blank">
-      <FaLinkedin size={30} />
-    </a>
-    <a href="https://github.com/A1-mamun" target="_blank">
-      <FaSquareGithub size={30} />
-    </a>
-    <a href="https://www.facebook.com/A1Mamun178" target="_blank">
-      <FaSquareFacebook size={30} />
-    </a>
-  </div>
-</div>; */
-}
