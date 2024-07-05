@@ -1,7 +1,34 @@
 import Lottie from "lottie-react";
 import emailLottie from "../../assets/LottieFile/email.json";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import toast from "react-hot-toast";
 
 const Hire = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_emailJsServiceId,
+        import.meta.env.VITE_emailJsTemplateId,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_emailJsPublicKey,
+        }
+      )
+      .then(
+        () => {
+          toast.success("Message send successfully");
+        },
+        (error) => {
+          console.log(error);
+          toast.error(error);
+        }
+      );
+  };
   return (
     <div className="container mx-auto min-h-screen">
       <h2 className="w-full text-center text-3xl font-bold">Hire Me</h2>
@@ -14,7 +41,7 @@ const Hire = () => {
             <h2 className="w-full text-center text-3xl font-bold">
               Let&apos;s Talk!
             </h2>
-            <form className="space-y-5 ">
+            <form ref={form} onSubmit={sendEmail} className="space-y-5 ">
               <div>
                 <label className="text-sm">Full name</label>
                 <input

@@ -25,7 +25,10 @@ const Banner = () => {
               </span>
             </h1>
 
-            <a href="" target="_">
+            <a
+              href="https://docs.google.com/document/d/1ylfbs3Ihe1VeBo-Yg_Y6z_DYMAXvZ_W3A--sathNiRI/edit"
+              target="_"
+            >
               <button className=" py-2 rounded-lg mt-8 px-5  border-none font-bold flex items-center gap-3 uppercase  text-lg ">
                 Resume <FaFileDownload className="text-xl animate-bounce" />
               </button>
