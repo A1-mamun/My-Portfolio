@@ -9,8 +9,8 @@ import c from "../../assets/icon/c.png";
 import cpp from "../../assets/icon/cpp.png";
 const Technologies = () => {
   return (
-    <div className="container mx-auto">
-      <h2 className="text-center text-4xl font-semibold">
+    <div id="skills" className="container mx-auto pt-32">
+      <h2 className="text-center text-4xl font-bold text-txt-color">
         Tools and Technologies I Use
       </h2>
       <div className="flex flex-wrap justify-center  gap-5 md:gap-7 lg:gap-10 my-20">

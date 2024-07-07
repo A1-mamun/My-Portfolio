@@ -30,9 +30,14 @@ const Hire = () => {
       );
   };
   return (
-    <div className="container mx-auto min-h-screen">
-      <h2 className="w-full text-center text-3xl font-bold">Hire Me</h2>
-      <div className="hero ">
+    <div
+      id="hire"
+      className="container mx-auto h-[calc(100vh-96px)] pt-32 text-[#fff]"
+    >
+      <h2 className="w-full text-center text-4xl font-bold text-txt-color -mb-14">
+        Hire Me
+      </h2>
+      <div className="hero">
         <div className="hero-content w-full flex-col lg:gap-10 lg:flex-row-reverse justify-between">
           <div className=" flex-1">
             <Lottie animationData={emailLottie}></Lottie>
@@ -43,7 +48,7 @@ const Hire = () => {
             </h2>
             <form ref={form} onSubmit={sendEmail} className="space-y-5 ">
               <div>
-                <label className="text-sm">Full name</label>
+                <label className="">Full name</label>
                 <input
                   id="name"
                   type="text"
@@ -54,7 +59,7 @@ const Hire = () => {
                 />
               </div>
               <div>
-                <label className="text-sm">Email</label>
+                <label className="">Email</label>
                 <input
                   id="email"
                   name="user_email"
@@ -64,7 +69,7 @@ const Hire = () => {
                 />
               </div>
               <div>
-                <label className="text-sm">Message</label>
+                <label className="">Message</label>
                 <textarea
                   name="message"
                   id="message"
@@ -75,7 +80,7 @@ const Hire = () => {
               </div>
               <button
                 type="submit"
-                className="w-full p-3 text-sm font-bold tracki uppercase rounded hover:bg-[#c49037] bg-[#dbb878] text-gray-900"
+                className="w-full p-3 text-sm font-bold  uppercase rounded bg-txt-color hover:bg-hover-color text-[#000]"
               >
                 Send Message
               </button>

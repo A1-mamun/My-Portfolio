@@ -5,43 +5,53 @@ import image from "../../assets/image/banner_img.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navlinks = (
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const navLinks = (
     <>
-      <li>
-        <a href="">Home</a>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("home")}>Home</a>
       </li>
-      <li>
-        <a href="">About Me</a>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("about")}>About Me</a>
       </li>
-      <li>
-        <a href="">Skills</a>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("skills")}>Skills</a>
       </li>
-      <li>
-        <a href="">Projects</a>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("projects")}>Projects</a>
       </li>
-      <li>
-        <a href="">Contact</a>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("hire")}> Message</a>
+      </li>
+      <li className="hover:border border-txt-color rounded-lg">
+        <a onClick={() => scrollToSection("contact")}>Contact</a>
       </li>
     </>
   );
   return (
-    <div className="fixed w-full top-0 bg-black z-10">
-      <div className="navbar container mx-auto pt-5">
+    <div className="fixed w-full top-0 bg-[#1D232A] z-10 ">
+      <div className="navbar container mx-auto pt-5 text-[#fff] ">
         <div className="navbar-start">
           <div className="flex items-center gap-5">
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2">
+              <div className="ring-txt-color ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2">
                 <img src={image} />
               </div>
             </div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-txt-color">
               AL-MAMUN
             </h2>
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5 text-xl">
-            {navlinks}
+            {navLinks}
           </ul>
         </div>
         <div className="navbar-end lg:hidden">
@@ -58,7 +68,7 @@ const Navbar = () => {
                 }`}
               >
                 <ul className=" menu menu-sm dropdown-content duration-1000 mt-3 z-[10] p-2 shadow bg-base-100 rounded-box w-52">
-                  {navlinks}
+                  {navLinks}
                 </ul>
               </div>
             </div>
