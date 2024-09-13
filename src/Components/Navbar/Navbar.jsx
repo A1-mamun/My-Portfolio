@@ -10,27 +10,41 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
   };
   const navLinks = (
     <>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("home")}>Home</a>
+        <a onClick={() => scrollToSection("home")} className="px-2 py-1">
+          Home
+        </a>
       </li>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("about")}>About Me</a>
+        <a onClick={() => scrollToSection("about")} className="px-2 py-1">
+          About Me
+        </a>
       </li>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("skills")}>Skills</a>
+        <a onClick={() => scrollToSection("skills")} className="px-2 py-1">
+          Skills
+        </a>
       </li>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("projects")}>Projects</a>
+        <a onClick={() => scrollToSection("projects")} className="px-2 py-1">
+          Projects
+        </a>
       </li>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("hire")}> Message</a>
+        <a onClick={() => scrollToSection("hire")} className="px-2 py-1">
+          {" "}
+          Message
+        </a>
       </li>
       <li className="hover:border border-txt-color rounded-lg">
-        <a onClick={() => scrollToSection("contact")}>Contact</a>
+        <a onClick={() => scrollToSection("contact")} className="px-2 py-1">
+          Contact
+        </a>
       </li>
     </>
   );
@@ -40,7 +54,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <div className="flex items-center gap-5">
             <div className="avatar">
-              <div className="ring-txt-color ring-offset-base-100 w-10 h-10 rounded-full ring ring-offset-2">
+              <div className="ring-txt-color ring-offset-base-100 w-5 h-5 md:w-8 md:h-8 rounded-full ring ring-offset-2">
                 <img src={image} />
               </div>
             </div>
@@ -50,7 +64,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-5 text-xl">
+          <ul className="menu menu-horizontal px-1 gap-4 xl:text-lg">
             {navLinks}
           </ul>
         </div>

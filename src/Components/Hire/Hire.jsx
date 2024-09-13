@@ -32,9 +32,9 @@ const Hire = () => {
   return (
     <div
       id="hire"
-      className="container mx-auto h-[calc(100vh-96px)] pt-32 text-[#fff]"
+      className="container mx-auto lg:h-[calc(100vh-96px)] pt-16 lg:pt-32 text-[#fff]"
     >
-      <h2 className="w-full text-center text-4xl font-bold text-txt-color -mb-14">
+      <h2 className="w-full text-center text-2xl md:text-3xl lg:text-4xl font-bold text-txt-color -mb-14">
         Hire Me
       </h2>
       <div className="hero">
@@ -43,7 +43,7 @@ const Hire = () => {
             <Lottie animationData={emailLottie}></Lottie>
           </div>
           <div className="flex-1">
-            <h2 className="w-full text-center text-3xl font-bold">
+            <h2 className="w-full text-center text-xl md:text-2xl lg:text-3xl font-bold">
               Let&apos;s Talk!
             </h2>
             <form ref={form} onSubmit={sendEmail} className="space-y-5 ">

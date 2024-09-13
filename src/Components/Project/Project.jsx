@@ -11,8 +11,8 @@ import project2 from "../../assets/image/foodvilla.png";
 import project3 from "../../assets/image/potteryverse.png";
 const Project = () => {
   return (
-    <div id="projects" className="container mx-auto pt-24">
-      <h2 className="text-4xl text-center font-bold text-txt-color">
+    <div id="projects" className="container mx-auto lg:pt-24 px-3 md:px-0">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-txt-color">
         Some of My Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-5 md:gap-7 lg:gap-10  max-w-7xl mx-auto my-10 text-[#fff]">

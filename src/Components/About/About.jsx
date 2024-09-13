@@ -2,14 +2,14 @@ import Lottie from "lottie-react";
 import aboutLottie from "../../assets/LottieFile/about.json";
 const About = () => {
   return (
-    <div id="about" className="container mx-auto h-[calc(100vh-96px)] pb-28">
+    <div id="about" className="container mx-auto lg:h-[calc(100vh-96px)] pb-28">
       <div className="hero min-h-screen text-[#fff]">
         <div className="hero-content w-full flex-col lg:gap-20 lg:flex-row justify-between">
-          <div className="flex-1 w-96 ">
+          <div className="flex-1 lg:w-96 ">
             <Lottie animationData={aboutLottie} className="-ml-10"></Lottie>
           </div>
           <div className="flex-1 px-5 lg:px-0">
-            <h1 className="text-4xl font-bold uppercase text-txt-color">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-txt-color">
               About Me
             </h1>
             <p className="py-6 text-lg text-justify">
