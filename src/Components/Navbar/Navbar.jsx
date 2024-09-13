@@ -71,9 +71,9 @@ const Navbar = () => {
         <div className="navbar-end lg:hidden">
           <div className=" mr-2 md:mr-3 lg:mr-5 text-sm md:text-base">
             {isOpen ? (
-              <MdClose onClick={() => setIsOpen(!isOpen)} />
+              <MdClose size={25} onClick={() => setIsOpen(!isOpen)} />
             ) : (
-              <AiOutlineMenu onClick={() => setIsOpen(!isOpen)} />
+              <AiOutlineMenu size={20} onClick={() => setIsOpen(!isOpen)} />
             )}
             <div className="absolute">
               <div

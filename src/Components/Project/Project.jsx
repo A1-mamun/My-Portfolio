@@ -11,7 +11,10 @@ import project2 from "../../assets/image/foodvilla.png";
 import project3 from "../../assets/image/potteryverse.png";
 const Project = () => {
   return (
-    <div id="projects" className="container mx-auto lg:pt-24 px-3 md:px-0">
+    <div
+      id="projects"
+      className="container mx-auto pt-20 lg:pt-24 px-3 md:px-0"
+    >
       <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold text-txt-color">
         Some of My Projects
       </h2>

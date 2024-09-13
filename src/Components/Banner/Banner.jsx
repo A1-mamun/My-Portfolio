@@ -15,10 +15,7 @@ const Banner = () => {
     }
   };
   return (
-    <div
-      id="home"
-      className="container mx-auto lg:h-[calc(100vh-96px)] lg:mt-24"
-    >
+    <div id="home" className="container mx-auto lg:h-[calc(100vh-96px)] mt-24">
       <div className="hero min-h-screen text-[#fff]">
         <div className="hero-content w-full  flex-col lg:gap-10 lg:flex-row-reverse justify-between">
           <div>
